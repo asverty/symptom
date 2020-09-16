@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@font-face: {
+    font-family: "NeueMontreal";
+    src: url("fonts/NeueMontreal-Regular.otf") format("opentype"),
+         url("fonts/NeueMontreal-Regular.ttf") format("truetype"),
+         url("fonts/NeueMontreal-Regular.woff") format("woff"),
+         url("fonts/NeueMontreal-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.container {
+    position: relative;
+    max-width: 1920px;
+    max-height: 4320px;
+    background-color: #0f0f0f;
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.scroll_1 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(img/scroll_1_fot0.jpg);
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    text-decoration: none;
+}
+
+.logo {
+    padding: 10px;
+    margin: 1px 143px 0px 54px;
+}
+
+.header_menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+/*
+    width: 66px;
+    height: 17px;
+*/
+    color: #fafafa; /*0f0f0f*/
+    font-family: "Neue Montreal";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    margin-top: 2px;
+    padding: 10px;
+}
+
+.link_brands {
+    margin-right: 28px;
+}
+
+.link_category {
+    margin-right: 385px;
+}
+
+.link_subcribe {
+    margin-right: 493px;
+}
+
+.link_login {
+    margin-top: -2px;
+    margin-right: 28px;
+}
+
+.link_wishes {
+    margin-top: -3px;
+    margin-right: 28px;
+}
+
+.link_cart {
+    margin-top: -4px;
+}
+
+.scroll_2 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(img/scroll_2_fot0.jpg);
+}
+
+.scroll_3 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(img/scroll_3_fot0.jpg);
+}
+
+.scroll_4 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(img/scroll_4_fot0.jpg);
+}
+
+.footer {
+    width: 1920px;
+    height: 508px;
+    background-color: #0f0f0f;
+    margin: 0 auto;
+    padding: 0;
+/*    flex: ;*/
+}
+
+.footer_menu {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+}
+
+.footer_block1 {
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 58px;
+    margin-left: 58px;
+}
+
+.link_about {
+    width: 131px;
+    height: 17px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+.link_contacts {
+    width: 131px;
+    height: 17px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+.link_yourdesign {
+    width: 131px;
+    height: 17px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+.link_prandcus {
+    width: 280px;
+    height: 34px;
+    padding: 6px;
+    margin-right: 11px;
+}
+
+.footer_block2 {
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 58px;
+}
+
+.link_warandret {
+    width: 282px;
+    height: 17px;
+    padding: 6px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+
+.footer_block3 {
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 58px;
+}
+
+.link_offer {
+    width: 52px;
+    height: 17px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+.footer_block4 {
+    display: column;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 58px;
+}
+
+.link_number {
+    width: 584px;
+    height: 63px;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    margin-bottom: 32px;
+}
+
+.link_mail {
+    width: 998px;
+    height: 69px;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.link_instagram {
+    width: 424px;
+    height: 63px;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    text-transform: uppercase;
+}
+
+.link_shipandpay {
+    width: 249px;
+    height: 17px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+.link_care {
+    width: 168px;
+    height: 17px;
+    padding: 6px;
+}
+
+.link_confident {
+    width: 142px;
+    height: 17px;
+    padding: 6px;
+    margin-right: 148px;
+}
+
+.link_phone {
+    width: 122px;
+    height: 19px;
+    margin-top: 6px;
+}
+
+.link_email {
+    width: 122px;
+    height: 19px;
+}
+
+.link_subscribe {
+    width: 164px;
+    height: 19px;
+}
+
+.counter {
+    position: fixed;
+    width: 80px;
+    height: 72px;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    line-height: 111.9%;
+    margin-top: 956px;
+    margin-left: 1763px
+}
