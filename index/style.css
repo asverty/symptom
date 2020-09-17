@@ -28,7 +28,7 @@
     width: 1920px;
     height: 1080px;
     background-image: url(img/scroll_1_fot0.jpg);
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .header {
@@ -46,11 +46,7 @@
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-/*
-    width: 66px;
-    height: 17px;
-*/
-    color: #fafafa; /*0f0f0f*/
+    color: #fafafa;
     font-family: "Neue Montreal";
     font-size: 16px;
     font-weight: 400;
@@ -276,4 +272,156 @@
     line-height: 111.9%;
     margin-top: 956px;
     margin-left: 1763px
+}
+
+.text_scroll_1_0 {
+    width: 1856px;
+    height: 443px;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    font-size: 288px;
+    font-weight: 400;
+    letter-spacing: 1.73px;
+    line-height: 227.23px;
+    text-transform: uppercase;
+    padding: 114px 18px 523px 46px;
+}
+
+.text_scroll_1_1 {
+    position: absolute;
+    width: 667px;
+    height: 16.88px;
+    left: 64px;
+    top: 1001px;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+}
+
+.text_scroll_2_0 {
+    width: 1797px;
+    height: 222px;
+    color: #fafafa;
+    font-family: "Neue Montreal";
+    font-size: 288px;
+    font-weight: 400;
+    letter-spacing: 1.73px;
+    line-height: 227.23px;
+    text-transform: uppercase;
+    padding: 716px 61px 142px 62px;
+}
+
+.text_scroll_2_1 {
+    position: absolute;
+    width: 552px;
+    height: 63px;
+    left: 1294px;
+    top: 1790px;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.006em;
+    color: #FAFAFA;
+}
+
+.text_scroll_2_2 {
+    position: absolute;
+    width: 686px;
+    height: 34px;
+    left: 64px;
+    top: 2056px;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+}
+
+.text_scroll_3_0 {
+    position: absolute;
+    width: 1541px;
+    height: 448px;
+    left: 44px;
+    top: 2240px;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 78.9%;
+    letter-spacing: 0.006em;
+    color: #FAFAFA;
+}
+
+.text_scroll_3_1 {
+    position: absolute;
+    width: 1792px;
+    height: 28px;
+    left: 64px;
+    top: 2734px;
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+}
+
+.text_scroll_3_2 {
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    left: 54px;
+    top: 3115px;
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+.text_scroll_4_0 {
+    position: absolute;
+    width: 1836px;
+    height: 629px;
+    left: 64px;
+    top: 3304px;
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 78.9%;
+    letter-spacing: 0.006em;
+    color: #FAFAFA;
+}
+
+.text_scroll_4_1 {
+    position: absolute;
+    width: 1792px;
+    height: 53px;
+    left: 64px;
+    top: 4143px;
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
 }
