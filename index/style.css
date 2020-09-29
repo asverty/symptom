@@ -1,17 +1,18 @@
+/*main style*/
+
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
 }
 
-@font-face: {
-    font-family: "NeueMontreal";
-    src: url("fonts/NeueMontreal-Regular.otf") format("opentype"),
-         url("fonts/NeueMontreal-Regular.ttf") format("truetype"),
-         url("fonts/NeueMontreal-Regular.woff") format("woff"),
-         url("fonts/NeueMontreal-Regular.woff2") format("woff2");
-    font-weight: normal;
+@font-face {
+    font-family: "Nimbus Sans";
+    src: url("fonts/NimbusSanL-Reg.ttf") format("truetype"),
+    url("fonts/NimbusSanL-Reg.woff") format("woff"),
+    url("fonts/NimbusSanL-Reg.woff2") format("woff2");
+    font-weight: 400;
     font-style: normal;
     }
 
@@ -20,26 +21,31 @@
     max-width: 1920px;
     max-height: 4320px;
     background-color: #0f0f0f;
-    margin: 0px auto;
-    padding: 0px auto;
+    margin: 0px;
+    padding: 0px;
+}
+/*
+body {
+    counter-reset: page;
 }
 
-.scroll_1 {
-    width: 1920px;
-    height: 1080px;
-    background-image: url(img/scroll_1_fot0.jpg);
-    margin: 0 auto;    
-}
+#page-number:after {
+    counter-increment: page;
+    content: "Page " counter(page);
+} */
 
 .header {
     position: fixed;
+    top: 0;
     display: flex;
     text-decoration: none;
+    width: 1920px;
+    height: 64px;
 }
 
-.logo {
-    padding: 10px;
-    margin: 1px 143px 0px 54px;
+.logo_w {
+    padding: 7px;
+    margin: 4px 147px 5px 57px;
 }
 
 .header_menu {
@@ -47,39 +53,205 @@
     list-style-type: none;
     justify-content: space-between;
     color: #fafafa;
+    font-family: "Nimbus Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+}
+
+.header:hover {
+    height: 572px;
+    width: 1920px;
+    position: fixed;
+    left: 0;
+    background: #FAFAFA;
+    transition: all 0.15s ease;
+}
+
+.logo_b{
+    height: 41px;
+    width: 139px;
+    left: 64px;
+    top: 11px;
+    border-radius: 0px;
+    padding: 7px;
+    margin: 4px 147px 0px 57px;
+}
+
+.mega_menu a:hover{
+    display: flex;
+    color: #0f0f0f;
+    list-style-image: url(img/Ellipse_6.svg);
+}
+
+/* .header_black:hover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    text-decoration: none;
+    width: 1920px;
+    height: 64px;
+    list-style-type: none;
+    justify-content: space-between;
+    color: #0f0f0f;
+    font-family: "Nimbus Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+} */
+
+.link_brands {
+    padding: 10px;
+    margin-top: 13px;
+    margin-right: 28px;
+}
+
+.link_brands a:hover{
+    border-radius: 50px;
+}
+
+/* .link_brands a:hover{
+    padding: 10px;
+    margin-top: 13px;
+    margin-left: 356px;
+    color: #0f0f0f;
+    list-style-image: url(img/Ellipse_6.svg);
+} */
+
+/* .link_brands_black{
+    padding: 0;
+    margin: 0;
+} */
+
+/* .link_brands:hover{
+    background-color: #fafafa;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 508px;
+    color: #f0f0f0;
     font-family: "Neue Montreal";
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.1px;
     text-transform: uppercase;
-    margin-top: 2px;
-    padding: 10px;
+} */
+
+.inner_mega_brands {
+    display: table-column;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.006em;
+    color: #0F0F0F;
 }
 
-.link_brands {
-    margin-right: 28px;
+.brand {
+    display: table-column;
+    width: 282px;
+    height: 41px;
+    color: #0f0f0f;
+    font-family: "Nimbus Sans";
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.22px;
 }
 
 .link_category {
     margin-right: 385px;
+    margin-top: 13px;
+    padding: 10px;
+}
+
+.inner_mega_category:hover {
+    display: table-column;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.006em;
+    color: #0F0F0F;
 }
 
 .link_subcribe {
     margin-right: 493px;
+    margin-top: 13px;
+    padding: 10px;
 }
 
 .link_login {
-    margin-top: -2px;
+    margin-top: 11px;
     margin-right: 28px;
+    padding: 10px;
 }
 
 .link_wishes {
-    margin-top: -3px;
+    margin-top: 10px;
     margin-right: 28px;
+    padding: 10px;
 }
 
 .link_cart {
-    margin-top: -4px;
+    margin-top: 9px;
+    padding: 10px;
+}
+
+.counter {
+    position: fixed;
+    /* bottom: inherit; */
+    width: 80px;
+    height: 72px;
+    color: #fafafa;
+    font-family: "Nimbus Sans";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    line-height: 111.9%;
+    margin-top: 956px;
+    margin-left: 1763px
+}
+
+.scroll_1 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(img/scroll_1_fot0.jpg);
+    margin: 0 auto;
+}
+
+.text_scroll_1_0 {
+    width: 1856px;
+    height: 443px;
+    color: #fafafa;
+    font-family: "Nimbus Sans";
+    font-size: 288px;
+    font-weight: 400;
+    letter-spacing: 1.73px;
+    line-height: 227.23px;
+    text-transform: uppercase;
+    padding: 114px 18px 523px 46px;
+}
+
+.text_scroll_1_1 {
+    position: absolute;
+    width: 667px;
+    height: 16.88px;
+    left: 64px;
+    top: 1001px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
 }
 
 .scroll_2 {
@@ -88,10 +260,102 @@
     background-image: url(img/scroll_2_fot0.jpg);
 }
 
+.text_scroll_2_0 {
+    width: 1797px;
+    height: 222px;
+    color: #fafafa;
+    font-family: "Nimbus Sans";
+    font-size: 288px;
+    font-weight: 400;
+    letter-spacing: 1.73px;
+    line-height: 227.23px;
+    text-transform: uppercase;
+    padding: 716px 61px 142px 62px;
+}
+
+.text_scroll_2_1 {
+    position: absolute;
+    width: 552px;
+    height: 63px;
+    left: 1294px;
+    top: 1790px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.006em;
+    color: #FAFAFA;
+}
+
+.text_scroll_2_2 {
+    position: absolute;
+    width: 686px;
+    height: 34px;
+    left: 64px;
+    top: 2056px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+}
+
 .scroll_3 {
     width: 1920px;
     height: 1080px;
     background-image: url(img/scroll_3_fot0.jpg);
+}
+
+.text_scroll_3_0 {
+    position: absolute;
+    width: 1541px;
+    height: 448px;
+    left: 44px;
+    top: 2240px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 78.9%;
+    letter-spacing: 0.006em;
+    color: #FAFAFA;
+}
+
+.text_scroll_3_1 {
+    position: absolute;
+    width: 1792px;
+    height: 28px;
+    left: 64px;
+    top: 2734px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+}
+
+.text_scroll_3_2 {
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    left: 54px;
+    top: 3115px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+    padding: 10px;
 }
 
 .scroll_4 {
@@ -100,13 +364,45 @@
     background-image: url(img/scroll_4_fot0.jpg);
 }
 
+.text_scroll_4_0 {
+    position: absolute;
+    width: 1836px;
+    height: 629px;
+    left: 64px;
+    top: 3304px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 78.9%;
+    letter-spacing: 0.006em;
+    color: #FAFAFA;
+}
+
+.text_scroll_4_1 {
+    position: absolute;
+    width: 1792px;
+    height: 53px;
+    left: 64px;
+    top: 4143px;
+    font-family: "Nimbus Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.006em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+}
 .footer {
+    object-position: bottom;
+    bottom: 0;
+    left: 0;
     width: 1920px;
     height: 508px;
     background-color: #0f0f0f;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-/*    flex: ;*/
 }
 
 .footer_menu {
@@ -114,7 +410,7 @@
     text-decoration: none;
     list-style-type: none;
     color: #fafafa;
-    font-family: "Neue Montreal";
+    font-family: "Nimbus Sans";
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.1px;
@@ -170,60 +466,6 @@
     margin-bottom: 6px;
 }
 
-.footer_block3 {
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 58px;
-}
-
-.link_offer {
-    width: 52px;
-    height: 17px;
-    padding: 6px;
-    margin-bottom: 6px;
-}
-
-.footer_block4 {
-    display: column;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 58px;
-}
-
-.link_number {
-    width: 584px;
-    height: 63px;
-    color: #fafafa;
-    font-family: "Neue Montreal";
-    font-size: 64px;
-    font-weight: 400;
-    letter-spacing: 0.38px;
-    margin-bottom: 32px;
-}
-
-.link_mail {
-    width: 998px;
-    height: 69px;
-    color: #fafafa;
-    font-family: "Neue Montreal";
-    font-size: 64px;
-    font-weight: 400;
-    letter-spacing: 0.38px;
-    text-transform: uppercase;
-    margin-bottom: 27px;
-}
-
-.link_instagram {
-    width: 424px;
-    height: 63px;
-    color: #fafafa;
-    font-family: "Neue Montreal";
-    font-size: 64px;
-    font-weight: 400;
-    letter-spacing: 0.38px;
-    text-transform: uppercase;
-}
-
 .link_shipandpay {
     width: 249px;
     height: 17px;
@@ -237,11 +479,31 @@
     padding: 6px;
 }
 
+.footer_block3 {
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 58px;
+}
+
+.link_offer {
+    width: 52px;
+    height: 17px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
 .link_confident {
     width: 142px;
     height: 17px;
     padding: 6px;
     margin-right: 148px;
+}
+
+.footer_block4 {
+    display: column;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 58px;
 }
 
 .link_phone {
@@ -250,178 +512,47 @@
     margin-top: 6px;
 }
 
+.link_number {
+    width: 584px;
+    height: 63px;
+    color: #fafafa;
+    font-family: "Nimbus Sans";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    margin-bottom: 32px;
+}
+
 .link_email {
     width: 122px;
     height: 19px;
 }
 
+.link_mail {
+    width: 998px;
+    height: 69px;
+    color: #fafafa;
+    font-family: "Nimbus Sans";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
 .link_subscribe {
     width: 164px;
     height: 19px;
 }
-
-.counter {
-    position: fixed;
-    width: 80px;
-    height: 72px;
+.link_instagram {
+    width: 424px;
+    height: 63px;
     color: #fafafa;
-    font-family: "Neue Montreal";
+    font-family: "Nimbus Sans";
     font-size: 64px;
     font-weight: 400;
     letter-spacing: 0.38px;
-    line-height: 111.9%;
-    margin-top: 956px;
-    margin-left: 1763px
-}
-
-.text_scroll_1_0 {
-    width: 1856px;
-    height: 443px;
-    color: #fafafa;
-    font-family: "Neue Montreal";
-    font-size: 288px;
-    font-weight: 400;
-    letter-spacing: 1.73px;
-    line-height: 227.23px;
     text-transform: uppercase;
-    padding: 114px 18px 523px 46px;
 }
 
-.text_scroll_1_1 {
-    position: absolute;
-    width: 667px;
-    height: 16.88px;
-    left: 64px;
-    top: 1001px;
-    font-family: "Neue Montreal";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.006em;
-    text-transform: uppercase;
-    color: #FAFAFA;
-}
+/* 404 style*/
 
-.text_scroll_2_0 {
-    width: 1797px;
-    height: 222px;
-    color: #fafafa;
-    font-family: "Neue Montreal";
-    font-size: 288px;
-    font-weight: 400;
-    letter-spacing: 1.73px;
-    line-height: 227.23px;
-    text-transform: uppercase;
-    padding: 716px 61px 142px 62px;
-}
-
-.text_scroll_2_1 {
-    position: absolute;
-    width: 552px;
-    height: 63px;
-    left: 1294px;
-    top: 1790px;
-    font-family: "Neue Montreal";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 64px;
-    line-height: 77px;
-    letter-spacing: 0.006em;
-    color: #FAFAFA;
-}
-
-.text_scroll_2_2 {
-    position: absolute;
-    width: 686px;
-    height: 34px;
-    left: 64px;
-    top: 2056px;
-    font-family: "Neue Montreal";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.006em;
-    text-transform: uppercase;
-    color: #FAFAFA;
-}
-
-.text_scroll_3_0 {
-    position: absolute;
-    width: 1541px;
-    height: 448px;
-    left: 44px;
-    top: 2240px;
-    font-family: "Neue Montreal";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 288px;
-    line-height: 78.9%;
-    letter-spacing: 0.006em;
-    color: #FAFAFA;
-}
-
-.text_scroll_3_1 {
-    position: absolute;
-    width: 1792px;
-    height: 28px;
-    left: 64px;
-    top: 2734px;
-    font-family: Neue Montreal;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.006em;
-    text-transform: uppercase;
-    color: #FAFAFA;
-}
-
-.text_scroll_3_2 {
-    position: absolute;
-    width: 150px;
-    height: 15px;
-    left: 54px;
-    top: 3115px;
-    font-family: Neue Montreal;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.006em;
-    text-transform: uppercase;
-    color: #FAFAFA;
-    padding: 10px;
-}
-
-.text_scroll_4_0 {
-    position: absolute;
-    width: 1836px;
-    height: 629px;
-    left: 64px;
-    top: 3304px;
-    font-family: Neue Montreal;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 288px;
-    line-height: 78.9%;
-    letter-spacing: 0.006em;
-    color: #FAFAFA;
-}
-
-.text_scroll_4_1 {
-    position: absolute;
-    width: 1792px;
-    height: 53px;
-    left: 64px;
-    top: 4143px;
-    font-family: Neue Montreal;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.006em;
-    text-transform: uppercase;
-    color: #FAFAFA;
-}
