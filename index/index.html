@@ -4,58 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин "SYMPTOM" - современные украшения из серебра и золота</title>
-    <link rel="stylesheet" type = "text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <!-- <script src="../sonpScroll.js"></script> -->
-<!--
-    <script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython_stdlib.js"></script>
--->
 </head>
 <body>
     <div class="container">
-        <nav class="header">
+        <div class="header">
         <a href="#" class="logo_w"><img src="img/logo_w.svg" alt="logo"></a>
-        <!-- <a href="#" class="logo_b link_brands_black"><img src="img/logo_b.svg" alt="logo"></a> -->
-            <menu class="header_menu mega_menu">
-                <li><a href="#" class="header_menu link_brands mega_menu">БРЕНДЫ</a>
-                    <a href="#" class="brand">Other&nbsp;Objects</a>
-                    <a href="#" class="brand">Odor&nbsp;objects</a>
-                    <a href="#" class="brand">Sub&nbsp;Rosa</a>
-                    <a href="#" class="brand">BLACK&nbsp;FORM</a>
-                    <a href="#" class="brand">NOT&nbsp;CONCEPT</a>
-                    <a href="#" class="brand">HUBRIS</a>
-                    <a href="#" class="brand">Arha</a>
-                    <a href="#" class="brand">1991</a>
-                    <a href="#" class="brand">48</a>
-                    <a href="#" class="brand">Atauchi</a>
-                    <a href="#" class="brand">Anna&nbsp;Maslowskaya</a>
-                </li>
-                <li><a href="#" class="header_menu link_category mega_menu">КАТЕГОРИИ</a>
-                <div class="inner_mega_category">
-                    <!-- <a href="#">Pendants</a>
-                    <a href="#">Earrings</a>
-                    <a href="#">Rings</a>
-                    <a href="#">Bracelets</a>
-                    <a href="#">Hairpins</a>
-                    <a href="#">Perfumery</a>
-                    <a href="#">Home</a> -->
+            <menu class="header_menu">
+                <div class="btn">
+                <a href="#" class="header_menu link_brands">БРЕНДЫ</a>
+                    <!-- <div class="mega_menu"> -->
+                        <!-- <div class="inner_mega_menu"> -->
+                            <!-- <tab class="brand">
+                                <a href="#">Other&nbsp;Objects</a>
+                                <a href="#">Sub&nbsp;Rosa</a>
+                                <a href="#">Black.Form</a>
+                                <a href="#">Not&nbsp;Concept</a>
+                                <a href="#">HUBRIS</a><br>
+                                <a href="#">Arha</a><br>
+                                <a href="#">1991</a><br>
+                                <a href="#">Behurr</a><br>
+                                <a href="#">48</a><br>
+                                <a href="#">Atauchi</a>
+                                <a href="#">Odor&nbsp;Objects</a>
+                                <a href="#">Anna<br>Maslowskaya</a>
+                                <a href="#">PERFERT</a><br>
+                                <a href="#">LIBERTE</a>
+                                <a href="#">NATALIE&nbsp;TONKAL</a>
+                            </tab>-->
+                        <!-- </div> -->
+                    <!-- </div> -->
                 </div>
-                </li>
-                <li><a href="#" class="header_menu link_subcribe">ПОДПИСКА</a>
-                    <div class="mega_menu">
-                        <div class="inner_mega_subcribe">
-                            <p><a href="#"></a></p>
-                        </div>
+                <div class="btn">
+                    <a href="#" class="header_menu link_category">КАТЕГОРИИ</a>
+                        <!-- <div class="mega_menu"> -->
+                            <!-- <div class="inner_mega_menu"> -->
+                            <!-- <tab class="brand">
+                                <a href="#">Подвески</a>
+                                <a href="#">Серьги</a>
+                                <a href="#">Кольца</a>
+                                <a href="#">Каффы</a>
+                                <a href="#">Браслеты</a>
+                                <a href="#">Заколки</a>
+                                <a href="#">Головные&nbsp;уборы</a>
+                            </tab> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
                     </div>
-                </li>
-                <li><a href="#" class="header_menu link_login">ВОЙТИ</a></li>
-                <li><a href="#" class="header_menu link_wishes">ЖЕЛАНИЯ</a></li>
-                <li><a href="#" class="header_menu link_cart">КОРЗИНА(00)</a></li>
+                <div class="btn">
+                    <a href="#" class="header_menu link_subcribe">ПОДПИСКА</a>
+                        <div class="inner_mega_subcribe">
+                            <a href="#"></a>
+                        </div>
+                </div>
+                <div class="btn">
+                    <a href="#" class="header_menu link_login">ВОЙТИ</a>
+                </div>
+                <div class="btn">
+                    <a href="#" class="header_menu link_wishes">ЖЕЛАНИЯ</a>
+                </div>
+                <div class="btn">
+                    <a href="#" class="header_menu link_cart">КОРЗИНА</a>
+                </div>
             </menu>
+        </div>
         <span class="counter">1/4</span>
-        </nav>
         <div class="scroll_1" id="page_1">
             <!-- <script type=text/javascript>
                 $(document).bind( 'mousewheel', function (e) {
@@ -70,47 +87,76 @@
             <p class="text_scroll_1_0">LIFE MAGAZINE</p>
             <p class="text_scroll_1_1">VERY IMPORTAN INFORMATION (VERY IMPORTANT INFORMATION)</p>
         </div>
-        <div class="scroll_2"" id="page_2">
+        <div class="scroll_2" id="page_2">
             <p class="text_scroll_2_0">50% OFF</p>
             <p class="text_scroll_2_1">TODAY ONLY</p>
-            <p class="text_scroll_2_2">OTHER OBJECTS, ODOR OBJECTS, KOLCO CIGANSCOE, +5&nbsp;HP IF&nbsp;YOU HAVE LOW MANA (The following brands participate in&nbsp;the promotion).</p>
+            <p class="text_scroll_2_2">OTHER OBJECTS, ODOR OBJECTS, KOLCO CIGANSCOE, +5&nbsp;HP IF&nbsp;YOU HAVE LOW MANA
+            (The following brands participate in&nbsp;the promotion).</p>
         </div>
-        <div class="scroll_3"" id="page_3">
+        <div class="scroll_3" id="page_3">
             <p class="text_scroll_3_0">NOT CONCEPT</p>
-            <p class="text_scroll_3_1">The concept is&nbsp;that there is&nbsp;no&nbsp;concept and this gives me&nbsp;complete freedom. I&nbsp;don&rsquo;t attach myself to&nbsp;anything, I&nbsp;have a&nbsp;lot of&nbsp;space for thought, because I&rsquo;m still at&nbsp;the beginning of&nbsp;the way: I&nbsp;study transforming and this is&nbsp;reflected in&nbsp;the design. I&nbsp;experiment a&nbsp;lot with forms, combine different textures and minerals. This technique can be&nbsp;seen in&nbsp;rings with large stones. They can not be&nbsp;repeated, because it&nbsp;uses natural stone, a&nbsp;copy of&nbsp;which can never be&nbsp;found. My&nbsp;jewelry is&nbsp;not distributed by&nbsp;gender&nbsp;&mdash; each time it&nbsp;warms my&nbsp;soul to&nbsp;see a&nbsp;guy with a&nbsp;cuff or&nbsp;ring of&nbsp;my&nbsp;design.</p>
+            <p class="text_scroll_3_1">The concept is&nbsp;that there is&nbsp;no&nbsp;concept and this gives me&nbsp;complete
+            freedom. I&nbsp;don&rsquo;t attach myself to&nbsp;anything, I&nbsp;have a&nbsp;lot of&nbsp;space for thought, because
+            I&rsquo;m still at&nbsp;the beginning of&nbsp;the way: I&nbsp;study transforming and this is&nbsp;reflected in&nbsp;the
+            design. I&nbsp;experiment a&nbsp;lot with forms, combine different textures and minerals. This technique can be&nbsp;seen
+            in&nbsp;rings with large stones. They can not be&nbsp;repeated, because it&nbsp;uses natural stone, a&nbsp;copy
+            of&nbsp;which can never be&nbsp;found. My&nbsp;jewelry is&nbsp;not distributed by&nbsp;gender&nbsp;&mdash; each time
+            it&nbsp;warms my&nbsp;soul to&nbsp;see a&nbsp;guy with a&nbsp;cuff or&nbsp;ring of&nbsp;my&nbsp;design.
+            </p>
             <a href="#" class="text_scroll_3_2">NOW IN&nbsp;OUR STORE</a>
         </div>
-        <div class="scroll_4"" id="page_4">
-            <p class="text_scroll_4_0">MAKE YOUR OWN DESIGN</p>
-            <p class="text_scroll_4_1">Here you can order your own jewelry, which will be&nbsp;created according to&nbsp;your design. Together we&nbsp;will agree on&nbsp;the terms of&nbsp;reference, estimated dates and cost of&nbsp;the product, and then sign an&nbsp;agreement on&nbsp;its creation. We&nbsp;will help to&nbsp;realize any of&nbsp;your ideas&nbsp;&mdash; a&nbsp;jewelry can be&nbsp;made of&nbsp;silver or&nbsp;gold, using precious and semiprecious stones, engraving or&nbsp;using enamel. The cost of&nbsp;the product depends on&nbsp;the complexity of&nbsp;the work, as&nbsp;well as&nbsp;on&nbsp;the cost of&nbsp;the selected metals and precious and semiprecious stones, but what cannot be&nbsp;counted in&nbsp;money is&nbsp;the joy of&nbsp;jewelry that will only be&nbsp;with you or&nbsp;the person to&nbsp;whom you will give&nbsp;it.</p>
+        <div class="scroll_4" id="page_4">
+            <!-- <p class="text_scroll_4_0">MAKE YOUR OWN DESIGN</p> -->
+            <p class="text_scroll_4_1">Here you can order your own jewelry, which will be&nbsp;created according to&nbsp;your design.
+            Together we&nbsp;will agree on&nbsp;the terms of&nbsp;reference, estimated dates and cost of&nbsp;the product, and then
+            sign an&nbsp;agreement on&nbsp;its creation. We&nbsp;will help to&nbsp;realize any of&nbsp;your ideas&nbsp;&mdash;
+            a&nbsp;jewelry can be&nbsp;made of&nbsp;silver or&nbsp;gold, using precious and semiprecious stones, engraving
+            or&nbsp;using enamel. The cost of&nbsp;the product depends on&nbsp;the complexity of&nbsp;the work, as&nbsp;well
+            as&nbsp;on&nbsp;the cost of&nbsp;the selected metals and precious and semiprecious stones, but what cannot be&nbsp;counted
+            in&nbsp;money is&nbsp;the joy of&nbsp;jewelry that will only be&nbsp;with you or&nbsp;the person to&nbsp;whom you will give&nbsp;it.
+            </p>
         </div>
-        <!-- <div class="footer">
+        <div class="footer">
             <div class="footer_menu">
                 <ul class="footer_block1">
-                    <li><a href="#" class="footer_menu link_about">ABOUT&nbsp;US</a></li>
-                    <li><a href="#" class="footer_menu link_contacts">CONTACTS</a></li>
-                    <li><a href="#" class="footer_menu link_yourdesign">YOUR&nbsp;DESIGN</a></li>
-                    <li><a href="#" class="footer_menu link_prandcus">PREORDER&nbsp;AND&nbsp;CUSTOMIZATION</a></li>
+                    <li><a href="about.html" class="footer_menu link_about">О&nbsp;НАС</a></li>
+                    <li><a href="#" class="footer_menu link_contacts">КОНТАКТЫ</a></li>
+                    <li><a href="#" class="footer_menu link_yourdesign">ВАШ&nbsp;ДИЗАЙН</a></li>
+                    <li><a href="#" class="footer_menu link_prandcus">ПРЕДЗАКАЗ&nbsp;И&nbsp;КАСТОМИЗАЦИЯ</a></li>
                 </ul>
                 <ul class="footer_block2">
-                    <li><a href="#" class="footer_menu link_warandret">WARRANTY&nbsp;AND&nbsp;RETURNS</a></li>
-                    <li><a href="#" class="footer_menu link_shipandpay">SHIPPING&nbsp;AND&nbsp;PAYMENT</a></li>
-                    <li><a href="#" class="footer_menu link_care">CARE&nbsp;FOR&nbsp;JEWELERY</a></li>
+                    <li><a href="#" class="footer_menu link_warandret">ГАРАНТИЯ&nbsp;И&nbsp;ВОЗВРАТ</a></li>
+                    <li><a href="#" class="footer_menu link_shipandpay">ДОСТАВКА&nbsp;И&nbsp;ОПЛАТА</a></li>
+                    <li><a href="#" class="footer_menu link_care">УХОД&nbsp;ЗА&nbsp;УКРАШЕНИЯМИ</a></li>
                 </ul>
                 <ul class="footer_block3">
-                    <li><a href="#" class="footer_menu link_offer">OFFER</a></li>
-                    <li><a href="#" class="footer_menu link_confident">CONFIDENTIALITY</a></li>
+                    <li><a href="oferta.html" class="footer_menu link_offer">ОФЕРТА</a></li>
+                    <li><a href="#" class="footer_menu link_confident">О&nbsp;КОНФИДЕНЦИАЛЬНОСТИ</a></li>
                 </ul>
                 <ul class="footer_block4">
-                    <li><p class="footer_menu link_phone">PHONE:</p></li>
+                    <li><p class="footer_menu link_phone">НАШ&nbsp;ТЕЛЕФОН:</p></li>
                     <li><a href="tel:+79151398563" class="footer_menu link_number">+7&nbsp;915&nbsp;139&nbsp;85&nbsp;63</a></li>
                     <li><p class="footer_menu link_email"><nobr>E-MAIL:</nobr></p></li>
                     <li><a href="mailto:HELLO@SYMPTOM.JEWELRY" class="footer_menu link_mail">HELLO@SYMPTOM.JEWELRY</a></li>
-                    <li><p class="footer_menu link_subscribe">SUBSCRIBE&nbsp;US:</p></li>
+                    <li><p class="footer_menu link_subscribe">ПОДПИСКА:</p></li>
                     <li><a href="https://www.instagram.com/symptom.jewelry/" class="footer_menu link_instagram">INSTAGRAM</a></li>
                 </ul>
-            </div> -->
+            </div>
         </div>
+        <!-- <div class="cookies">
+            <div class="cookies_text">
+                <p>
+                Наш сайт, как и большинство других, использует файлы cookie и другие подобные технологии (пиксельные теги и т.д.)
+                для предоставления услуг, которые наилучшим образом соответствуют вашим интересам и потребностям, а также для сбора
+                статистической и маркетинговой информации для анализа и улучшения наших услуг и сайтов.
+                </p><br>
+                <p>
+                Используя этот сайт, вы соглашаетесь на использование файлов cookie и других подобных технологий в соответствии
+                с настоящим Уведомлением.
+                </p>
+            </div>
+            <button type="button" class="close_btn"></button>
+        </div> -->
     </div>
 </body>
 </html>

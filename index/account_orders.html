@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваши заказы @ Symptom</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container_account">
+        <p class="account_name">ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ</p>
+        <div class="account_menu">
+            <div class="buttons_box btn">
+                <a href="#" class="profile">ПРОФИЛЬ</a>
+                <a href="#" class="orders">ЗАКАЗЫ</a>
+                <a href="#" class="preorders">ПРЕДЗАКАЗЫ</a>
+            </div>
+        </div>
+    </div>
+    <div class="user_orders_list">
+        <div class="user_order user_orders_list_string_1">
+            <form class="user_orders_list_item" action="/forms" method="GET">
+                <div class="user_order_metrics">
+                    <label for="order_id">
+                        <p class="order_id">#:</p>
+                        <input type="text" name="order_id_data" placeholder="1230948208">
+                    </label>
+                    <label for="order_id_date">
+                        <p class="order_id_date">ДАТА:</p>
+                        <input type="text" name="order_id_date_data" placeholder="2020.05.27">
+                    </label>
+                    <label for="order_id_status">
+                        <p class="order_id_status">СТАТУС:</p>
+                        <input type="text" name="order_id_status_data" placeholder="ДОСТАВЛЕНО">
+                    </label>
+                    <label for="order_id_cost">
+                        <p class="order_id_cost">СТОИМОСТЬ:</p>
+                        <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="68 000 Ру за 5 позиций">
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="user_order user_orders_list_string_2">
+            <form class="user_orders_list_item" action="/forms" method="GET">
+                <div class="user_order_metrics">
+                    <label for="order_id">
+                        <p class="order_id">#:</p>
+                        <input type="text" name="order_id_data" placeholder="9825309820">
+                    </label>
+                    <label for="order_id_date">
+                        <p class="order_id_date">ДАТА:</p>
+                        <input type="text" name="order_id_date_data" placeholder="2020.12.18">
+                    </label>
+                    <label for="order_id_status">
+                        <p class="order_id_status">СТАТУС:</p>
+                        <input type="text" name="order_id_status_data" placeholder="ОТПРАВЛЕНО">
+                    </label>
+                    <label for="order_id_cost">
+                        <p class="order_id_cost">СТОИМОСТЬ:</p>
+                        <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="68 000 Руб за 5 позиций">
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="user_order user_orders_list_string_3">
+            <form class="user_orders_list_item" action="/forms" method="GET">
+            <div class="user_order_metrics">
+                <label for="order_id">
+                    <p class="order_id">#:</p>
+                    <input type="text" name="order_id_data" placeholder="0025302095">
+                </label>
+                <label for="order_id_date">
+                    <p class="order_id_date">ДАТА:</p>
+                    <input type="text" name="order_id_date_data" placeholder="2020.12.19">
+                </label>
+                <label for="order_id_status">
+                    <p class="order_id_status">СТАТУС:</p>
+                    <input type="text" name="order_id_status_data" placeholder="ОЖИДАНИЕ">
+                </label>
+                <label for="order_id_cost">
+                    <p class="order_id_cost">СТОИМОСТЬ:</p>
+                    <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="11 000 Руб за 1 позицию">
+                </label>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

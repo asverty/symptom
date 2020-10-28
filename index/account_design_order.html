@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш дизайн@Symptom</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</head>
+<body>
+    <include src="./menu.html"></include>
+    <div class="container_account_design_order">
+        <div class="your_design">ВАШ&nbsp;ДИЗАЙН</div>
+        <div class="text_design">У&nbsp;нас вы&nbsp;можете заказать себе украшение, которое будет
+            создано по&nbsp;вашему дизайну.&nbsp;Вместе мы&nbsp;согласовываем техническое задание,
+            примерные сроки и&nbsp;стоимость продукта, после чего подпишем договор на&nbsp;его создание.
+            Мы&nbsp;поможем воплотить в&nbsp;жизнь любую вашу идею&nbsp;&mdash; украшения могут быть
+            выполнены из&nbsp;серебра или золота, с&nbsp;использованием драгоценных и&nbsp;полудрагоценных
+            камней, с&nbsp;гравировкой или с&nbsp;использованием эмали. Стоимость изделия зависит
+            от&nbsp;сложности работы, а&nbsp;также от&nbsp;стоимости выбранных металлов и&nbsp;драгоценных
+            и&nbsp;полудрагоценных камней, но&nbsp;то, что не&nbsp;может быть подсчитано деньгами,&nbsp;&mdash;
+            это радость от&nbsp;украшений, которую только вам или человеку кому вы&nbsp;отдадите это будет.
+        </div>
+    <form  class="account_design_order_form" action="/forms" method="POST">
+        <div class="inline_div">
+        <fieldset class="account_design_order_string_01">
+            <label for="email">
+                <p>ЭЛЕКТРОННАЯ&nbsp;ПОЧТА</p>
+                <input type="email" id="usermail" name="usermail" autocorrect="off" autocapitalize="on" placeholder="your@mail.cpm" required>
+            </label>
+            <label for="name">
+                <p>ИМЯ:</p>
+                <input type="text" id="name" name="name" autocorrect="off" autocapitalize="off"placeholder="ВАШЕ ИМЯ" required>
+            </label>
+        </fieldset>
+        <fieldset class="account_design_order_string_02">
+            <label for="user_phone"></label>
+                <p>ТЕЛЕФОН:</p>
+                <input type="number" id="user_phone" name="user_phone" autocorrect="off" autocapitalize="off" placeholder="+7" required>
+            <label for="picture">
+                <p>ИЗОБРАЖЕНИЕ:</p>
+                <input type="file" id="user_pic" name="user_id.picture" autocorrect="off" placeholder="ВАШЕ ИЗОБРАЖЕНИЕ"></p>
+            </label>
+        </fieldset>
+        </div>
+        <fieldset class="account_design_order_string_03">
+            <label for="message">
+                ВАШИ ПОЖЕЛАНИЯ:
+            <textarea name="user_message" id="message" placeholder="ЗДЕСЬ ВЫ МОЖЕТЕ ОСТАВИТЬ ВАШИ ПОЖЕЛАНИЯ" required></textarea>
+            </label>
+        </fieldset>
+    </form>
+    <button type="button" class="btn_order"></button>
+    </div>
+</body>
+</html>
