@@ -1,91 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваши заказы @ Symptom</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="robots"content="">
+  <title>Ваши заказы@Symptom</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/ico">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
+
 <body>
-    <div class="container_account">
-        <p class="account_name">ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ</p>
-        <div class="account_menu">
-            <div class="buttons_box btn">
-                <a href="#" class="profile">ПРОФИЛЬ</a>
-                <a href="#" class="orders">ЗАКАЗЫ</a>
-                <a href="#" class="preorders">ПРЕДЗАКАЗЫ</a>
-            </div>
-        </div>
+
+  <div class="container_account">
+    <header class="header__black">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo_w.svg" alt="logo">
+      </a>
+      <nav class="header__nav">
+        <button type="button" class="main__text_style buttons_box btn header__nav_brands">БРЕНДЫ</button>
+        <button type="button" class="main__text_style buttons_box btn header__nav_category">КАТЕГОРИИ</button>
+        <button type="button" class="main__text_style buttons_box btn header__nav_subcribe">ПОДПИШИСЬ</button>
+        <button type="button" class="main__text_style buttons_box btn header__nav_login">ВОЙТИ</button>
+        <button type="button" class="main__text_style buttons_box btn header__nav_wishes">ЖЕЛАНИЯ</button>
+        <button type="button" class="main__text_style buttons_box btn header__nav_cart">КОРЗИНА</button>
+      </nav>
+    </header>
+
+    <div class="">
+      <div class="dropdown-menu__wrapper">
+        <section class="dropdown-menu__container">
+          <ul class="dropdown-menu__column">
+            <li class="dropdown-menu__item-box"><a href="#" class="">Other Objects</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Liberte</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Arha</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">HUBRIS</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">1991</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">48</a></li>
+          </ul>
+          <ul class="dropdown-menu__column">
+            <li class="dropdown-menu__item-box"><a href="#" class="">Sub Rosa</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Not Concept</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Perfert</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Behurr</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Atauchi</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Odor Objects</a></li>
+          </ul>
+          <ul class="dropdown-menu__column">
+            <li class="dropdown-menu__item-box"><a href="#" class="">Black.Form</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Natalie Tonkal</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Anna Maslovskaya</a></li>
+          </ul>
+        </section>
+        <section class="dropdown-menu__container-photo">
+        </section>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="dropdown-menu__wrapper">
+        <section class="dropdown-menu__container">
+          <ul class="dropdown-menu__column">
+            <li class="dropdown-menu__item-box"><a href="#" class="">Подвески</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Серьги</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Кольца</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Каффы</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Браслеты</a></li>
+            <li class="dropdown-menu__item-box"><a href="#" class="">Заколки</a></li>
+          </ul>
+          <ul class="dropdown-menu__column">
+            <li class="dropdown-menu__item-box"><a href="#" class="">Головные уборы</a></li>
+          </ul>
+        </section>
+        <section class="dropdown-menu__container-photo"></section>
+      </div>
+    </div>
+
+    <p class="account_name">ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ</p>
+    <div class="account_menu">
+      <div class="buttons_box btn">
+        <a href="#" class="profile">ПРОФИЛЬ</a>
+        <a href="#" class="orders">ЗАКАЗЫ</a>
+        <a href="#" class="preorders">ПРЕДЗАКАЗЫ</a>
+      </div>
+    </div>
     </div>
     <div class="user_orders_list">
-        <div class="user_order user_orders_list_string_1">
-            <form class="user_orders_list_item" action="/forms" method="GET">
-                <div class="user_order_metrics">
-                    <label for="order_id">
-                        <p class="order_id">#:</p>
-                        <input type="text" name="order_id_data" placeholder="1230948208">
-                    </label>
-                    <label for="order_id_date">
-                        <p class="order_id_date">ДАТА:</p>
-                        <input type="text" name="order_id_date_data" placeholder="2020.05.27">
-                    </label>
-                    <label for="order_id_status">
-                        <p class="order_id_status">СТАТУС:</p>
-                        <input type="text" name="order_id_status_data" placeholder="ДОСТАВЛЕНО">
-                    </label>
-                    <label for="order_id_cost">
-                        <p class="order_id_cost">СТОИМОСТЬ:</p>
-                        <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="68 000 Ру за 5 позиций">
-                    </label>
-                </div>
-            </form>
+      <div class="user_order user_orders_list_string_1">
+        <form class="user_orders_list_item" action="/forms" method="GET">
+          <div class="user_order_metrics">
+            <label for="order_id">
+              <p class="order_id">#:</p>
+              <input type="text" name="order_id_data" placeholder="1230948208">
+            </label>
+            <label for="order_id_date">
+              <p class="order_id_date">ДАТА:</p>
+              <input type="text" name="order_id_date_data" placeholder="2020.05.27">
+            </label>
+            <label for="order_id_status">
+              <p class="order_id_status">СТАТУС:</p>
+              <input type="text" name="order_id_status_data" placeholder="ДОСТАВЛЕНО">
+            </label>
+            <label for="order_id_cost">
+              <p class="order_id_cost">СТОИМОСТЬ:</p>
+              <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="68 000 Ру за 5 позиций">
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="user_order user_orders_list_string_2">
+        <form class="user_orders_list_item" action="/forms" method="GET">
+          <div class="user_order_metrics">
+            <label for="order_id">
+              <p class="order_id">#:</p>
+              <input type="text" name="order_id_data" placeholder="9825309820">
+            </label>
+            <label for="order_id_date">
+              <p class="order_id_date">ДАТА:</p>
+              <input type="text" name="order_id_date_data" placeholder="2020.12.18">
+            </label>
+            <label for="order_id_status">
+              <p class="order_id_status">СТАТУС:</p>
+              <input type="text" name="order_id_status_data" placeholder="ОТПРАВЛЕНО">
+            </label>
+            <label for="order_id_cost">
+              <p class="order_id_cost">СТОИМОСТЬ:</p>
+              <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="68 000 Руб за 5 позиций">
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="user_order user_orders_list_string_3">
+        <form class="user_orders_list_item" action="/forms" method="GET">
+        <div class="user_order_metrics">
+          <label for="order_id">
+            <p class="order_id">#:</p>
+            <input type="text" name="order_id_data" placeholder="0025302095">
+          </label>
+          <label for="order_id_date">
+            <p class="order_id_date">ДАТА:</p>
+            <input type="text" name="order_id_date_data" placeholder="2020.12.19">
+          </label>
+          <label for="order_id_status">
+            <p class="order_id_status">СТАТУС:</p>
+            <input type="text" name="order_id_status_data" placeholder="ОЖИДАНИЕ">
+          </label>
+          <label for="order_id_cost">
+            <p class="order_id_cost">СТОИМОСТЬ:</p>
+            <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="11 000 Руб за 1 позицию">
+          </label>
         </div>
-        <div class="user_order user_orders_list_string_2">
-            <form class="user_orders_list_item" action="/forms" method="GET">
-                <div class="user_order_metrics">
-                    <label for="order_id">
-                        <p class="order_id">#:</p>
-                        <input type="text" name="order_id_data" placeholder="9825309820">
-                    </label>
-                    <label for="order_id_date">
-                        <p class="order_id_date">ДАТА:</p>
-                        <input type="text" name="order_id_date_data" placeholder="2020.12.18">
-                    </label>
-                    <label for="order_id_status">
-                        <p class="order_id_status">СТАТУС:</p>
-                        <input type="text" name="order_id_status_data" placeholder="ОТПРАВЛЕНО">
-                    </label>
-                    <label for="order_id_cost">
-                        <p class="order_id_cost">СТОИМОСТЬ:</p>
-                        <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="68 000 Руб за 5 позиций">
-                    </label>
-                </div>
-            </form>
-        </div>
-        <div class="user_order user_orders_list_string_3">
-            <form class="user_orders_list_item" action="/forms" method="GET">
-            <div class="user_order_metrics">
-                <label for="order_id">
-                    <p class="order_id">#:</p>
-                    <input type="text" name="order_id_data" placeholder="0025302095">
-                </label>
-                <label for="order_id_date">
-                    <p class="order_id_date">ДАТА:</p>
-                    <input type="text" name="order_id_date_data" placeholder="2020.12.19">
-                </label>
-                <label for="order_id_status">
-                    <p class="order_id_status">СТАТУС:</p>
-                    <input type="text" name="order_id_status_data" placeholder="ОЖИДАНИЕ">
-                </label>
-                <label for="order_id_cost">
-                    <p class="order_id_cost">СТОИМОСТЬ:</p>
-                    <input type="text" id="order_id_cost_data" name="order_id_cost_data" placeholder="11 000 Руб за 1 позицию">
-                </label>
-            </div>
-            </form>
-        </div>
-    </div>
+        </form>
+      </div>
+  </div>
+
 </body>
+
 </html>
